@@ -34,7 +34,7 @@ public class Controller {
             double rate = exchangeRate(from, to);
             double converted = amount * rate;
 
-            result.setText(String.format("%.2f %s = %.2f %s", amount, from, converted, to));
+            result.setText("%.2f %s = %.2f %s".formatted(amount, from, converted, to));
         } catch (Exception e) {
             result.setText("Invalid Amount");
         }
@@ -42,7 +42,7 @@ public class Controller {
 
     private double exchangeRate(String from, String to) {
         try {
-            String url = String.format("https://open.er-api.com/v6/latest/%s", from);
+            String url = "https://open.er-api.com/v6/latest/%s".formatted(from);
             HttpClient client = HttpClient.newHttpClient();
             HttpRequest request = HttpRequest.newBuilder()
                     .uri(URI.create(url))
