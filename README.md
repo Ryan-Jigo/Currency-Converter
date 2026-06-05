@@ -12,16 +12,6 @@ A simple and responsive web application that allows users to convert currencies 
 * Error handling for invalid inputs
 * Lightweight and fast performance
 
-## 🖼️ Preview
-
-Add screenshots or GIFs of your application here.
-
-```text
-screenshots/
-├── home.png
-└── conversion-demo.png
-```
-
 ## 🛠️ Tech Stack
 
 * HTML5
